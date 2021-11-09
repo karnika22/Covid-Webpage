@@ -1,7 +1,16 @@
+.data-card{
+  transform: scale(0.97);
+  
+}
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
+}
+
+/* cards-label */
+.btn-outline-primary:hover, .btn-outline-dark:hover {
+  color:  rgb(240, 114, 11);
 }
 
 /* Style the links inside the navigation bar */
@@ -25,16 +34,16 @@
   background-color: #e1f33c;
   color: white;
 }
-
 /* Bar-Graph-Editing */
 
 .barcontainer {
-  align-self: ;
+  /* align-self: ; */
   position: relative;
   border: 3px solid black;
   border-radius: 5px 5px 0 0;
+  margin-left: 20px;
   width: 80%;
-  margin: 0 auto;
+  /* margin: 0; */
   min-height: 25vw;
   max-height: 50vw;
   min-width: 40%;
@@ -75,21 +84,54 @@
 
 .barlabel {
   position: absolute;
-  border-right: 77px solid black;
-  /* background: #888; */
+  
+  /* border-right: 77px solid rgb(250, 133, 87); */
+  
   bottom: 0;
-  width: 7%;
-  /* text-align: center; */
+  width: 100%;
+  background-color: #dafa26;
   /* text-shadow: 1px 1px 0px black; */
-  color: white;
+  color: rgba(188, 177, 207, 0.829);
+}
+.bar1 .barlabel{
+  
+}
+.bar2 .barlabel{
+  
+}
+.bar5 .barlabel{
+  
+}
+.bar6 .barlabel{
+  
+}
+.bar7 .barlabel{
+  
+}
+.bar8 .barlabel{
+  
+}
+.bar9 .barlabel{
+  
+}
+.bar10 .barlabel{
+  
+}
+.bar12 .barlabel{
+
+}
+.bar13 .barlabel{
+  
 }
 
 .bar1 {
   margin-left:1%;
+  background-color: rgb(255, 0, 0);
 }
 
 .bar2 {
   margin-left:11%;
+  background-color: rgb(235, 23, 76);
 }
 
 /* .bar3 {
@@ -102,26 +144,34 @@
 
 .bar5 {
   margin-left:21%;
+  background-color: rgb(255, 0, 179);
 }
 
 .bar6 {
   margin-left:31%;
+  background-color: rgb(195, 0, 255);
 }
 .bar7 {
   margin-left:41%;
+  background-color: rgb(132, 0, 255);
 }
 .bar8 {
   margin-left:51%;
+  background-color: rgb(0, 38, 255);
 }
 .bar9 {
   margin-left:61%;
+  background-color: rgb(0, 255, 200);
 }
 .bar10 {
   margin-left:71%;
+  background-color: rgb(164, 204, 21);
 }
 .bar11{
   margin-left: 81%;
+  background-color: rgb(209, 116, 29);
 }
 .bar12{
   margin-left: 91%;
+  background-color: rgb(250, 17, 1);
 }
