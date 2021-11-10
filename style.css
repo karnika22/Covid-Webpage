@@ -1,3 +1,23 @@
+body{
+  background-color: rgb(217, 220, 241);
+}
+
+.card-header{
+  background-color: #5627fd;
+  color: rgb(226, 218, 255);
+  text-align: center;
+}
+
+.card, .card-1{
+  background-color: #cecdfc;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.card-1{
+  margin-left: 5%;
+}
+
 .data-card{
   transform: scale(0.97);
   
@@ -9,10 +29,13 @@
 }
 
 /* cards-label */
-.btn-outline-primary:hover, .btn-outline-dark:hover {
-  color:  rgb(240, 114, 11);
+.btn-outline-dark:hover {
+  color:#cecdfc  ;
 }
 
+.btn-outline-dark{
+  background-color: #ddddff;
+}
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -57,7 +80,7 @@
   width: 100%;
   padding-top: 3px;
   padding-bottom: 3px;
-  background: #663399;
+  background: #002064;
   border-bottom: 3px solid black;
   font-size: 1.5em;
   color: white;
@@ -84,14 +107,10 @@
 
 .barlabel {
   position: absolute;
-  
-  /* border-right: 77px solid rgb(250, 133, 87); */
-  
   bottom: 0;
   width: 100%;
-  background-color: #dafa26;
-  /* text-shadow: 1px 1px 0px black; */
-  color: rgba(188, 177, 207, 0.829);
+  background-color: #000000;
+  color: rgba(181, 205, 228, 0.829);
 }
 .bar1 .barlabel{
   
@@ -120,58 +139,47 @@
 .bar12 .barlabel{
 
 }
-.bar13 .barlabel{
-  
-}
 
 .bar1 {
   margin-left:1%;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(31, 38, 133);
 }
 
 .bar2 {
   margin-left:11%;
-  background-color: rgb(235, 23, 76);
+  background-color: rgb(27, 29, 163);
 }
-
-/* .bar3 {
-  margin-left:18%;
-}
-
-.bar4 {
-  margin-left:27%;
-} */
 
 .bar5 {
   margin-left:21%;
-  background-color: rgb(255, 0, 179);
+  background-color: rgb(40, 42, 184);
 }
 
 .bar6 {
   margin-left:31%;
-  background-color: rgb(195, 0, 255);
+  background-color: rgb(64, 84, 201);
 }
 .bar7 {
   margin-left:41%;
-  background-color: rgb(132, 0, 255);
+  background-color: rgb(71, 89, 192);
 }
 .bar8 {
   margin-left:51%;
-  background-color: rgb(0, 38, 255);
+  background-color: rgb(82, 106, 243);
 }
 .bar9 {
   margin-left:61%;
-  background-color: rgb(0, 255, 200);
+  background-color: rgb(111, 150, 255);
 }
 .bar10 {
   margin-left:71%;
-  background-color: rgb(164, 204, 21);
+  background-color: rgb(116, 147, 248);
 }
 .bar11{
   margin-left: 81%;
-  background-color: rgb(209, 116, 29);
+  background-color: rgb(121, 153, 241);
 }
 .bar12{
   margin-left: 91%;
-  background-color: rgb(250, 17, 1);
+  background-color: rgb(172, 192, 248);
 }
