@@ -1,6 +1,20 @@
+body{
+  background-color: #c2caddb6;
+}
+h2{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
 .data-card{
   transform: scale(0.97);
-  
+}
+.card-header{
+  background-color: #39646352; 
+}
+.card-body{
+  background-color: #7aa1a567; 
 }
 /* Add a black background color to the top navigation */
 .topnav {
@@ -10,7 +24,7 @@
 
 /* cards-label */
 .btn-outline-primary:hover, .btn-outline-dark:hover {
-  color:  rgb(240, 114, 11);
+  color:  #F4E9CD;
 }
 
 /* Style the links inside the navigation bar */
@@ -42,8 +56,7 @@
   border: 3px solid black;
   border-radius: 5px 5px 0 0;
   margin-left: 20px;
-  width: 80%;
-  /* margin: 0; */
+  width: 0%;
   min-height: 25vw;
   max-height: 50vw;
   min-width: 40%;
@@ -73,7 +86,7 @@
   border: 1px solid black;
   border-radius: 6px 6px 0 0;
   background: #22992c;
-  width: 8.5%;
+  width: 17%;
   text-align: center;
   color: white;
   text-shadow: 1px 1px 0 black;
@@ -93,44 +106,13 @@
   /* text-shadow: 1px 1px 0px black; */
   color: rgba(188, 177, 207, 0.829);
 }
-.bar1 .barlabel{
-  
-}
-.bar2 .barlabel{
-  
-}
-.bar5 .barlabel{
-  
-}
-.bar6 .barlabel{
-  
-}
-.bar7 .barlabel{
-  
-}
-.bar8 .barlabel{
-  
-}
-.bar9 .barlabel{
-  
-}
-.bar10 .barlabel{
-  
-}
-.bar12 .barlabel{
-
-}
-.bar13 .barlabel{
-  
-}
-
 .bar1 {
   margin-left:1%;
   background-color: rgb(255, 0, 0);
 }
 
 .bar2 {
-  margin-left:11%;
+  margin-left:20%;
   background-color: rgb(235, 23, 76);
 }
 
@@ -143,35 +125,15 @@
 } */
 
 .bar5 {
-  margin-left:21%;
+  margin-left:40%;
   background-color: rgb(255, 0, 179);
 }
 
 .bar6 {
-  margin-left:31%;
+  margin-left:60%;
   background-color: rgb(195, 0, 255);
 }
 .bar7 {
-  margin-left:41%;
+  margin-left:80%;
   background-color: rgb(132, 0, 255);
-}
-.bar8 {
-  margin-left:51%;
-  background-color: rgb(0, 38, 255);
-}
-.bar9 {
-  margin-left:61%;
-  background-color: rgb(0, 255, 200);
-}
-.bar10 {
-  margin-left:71%;
-  background-color: rgb(164, 204, 21);
-}
-.bar11{
-  margin-left: 81%;
-  background-color: rgb(209, 116, 29);
-}
-.bar12{
-  margin-left: 91%;
-  background-color: rgb(250, 17, 1);
 }
