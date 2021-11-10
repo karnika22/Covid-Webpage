@@ -3,7 +3,7 @@ body{
 }
 
 .card-header{
-  background-color: #5627fd;
+  background-color: #3224f8;
   color: rgb(226, 218, 255);
   text-align: center;
 }
@@ -30,11 +30,12 @@ body{
 
 /* cards-label */
 .btn-outline-dark:hover {
-  color:#cecdfc  ;
+  background-color: #2031b3;
+  color:#fff  ;
 }
 
 .btn-outline-dark{
-  background-color: #ddddff;
+  background-color: #95a8ff;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -169,7 +170,7 @@ body{
 }
 .bar9 {
   margin-left:61%;
-  background-color: rgb(111, 150, 255);
+  background-color: rgb(123, 158, 255);
 }
 .bar10 {
   margin-left:71%;
@@ -181,5 +182,5 @@ body{
 }
 .bar12{
   margin-left: 91%;
-  background-color: rgb(172, 192, 248);
+  background-color: rgb(161, 185, 250);
 }
