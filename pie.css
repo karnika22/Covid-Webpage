@@ -1,0 +1,48 @@
+body {
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#my-pie-chart-container {
+  display: flex;
+  align-items: right;
+  margin-left: 0%;
+}
+
+#my-pie-chart {
+  background: conic-gradient( orange 23.27% 40.47%, red 40.47%);
+  border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+#legenda {
+  margin-top: 310px;
+  margin-left: 40px;
+  background-color: white;
+padding: 5px;
+}
+
+.entry {
+  display: flex;
+  align-items: center;
+}
+
+.entry-color {
+    height: 10px;
+    width: 10px;
+}
+
+.entry-text {
+  margin-left: 5px;
+}
+
+#color-red {
+  background-color: red;
+}
+
+#color-orange {
+  background-color: orange;
+}
