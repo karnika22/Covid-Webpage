@@ -1,0 +1,49 @@
+/**********head**********/
+body{
+    text-align:center;
+}
+
+.title{
+    margin: 10px 5px 20px 5px;
+    padding: 5px 5px;
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height:1.5rem;
+}
+/***/
+.btn{
+    margin:0px;
+}
+
+/**********icons***********/
+.icons{
+    line-height:normal;
+    padding:10px 10px;
+    /* align :center; */
+    font-size:2rem;
+    color:grey;
+    position: relative;
+}
+.icon-mask{
+    padding-left:10px;
+    margin-left:25px;
+}
+
+/*********footer section*****************/
+.social-media{
+    font-size:2rem;
+    color:grey;
+    font-weight: bold;
+}
+.copyright{
+    color:black;
+}
+
+.social-media-icon{
+    padding:10px 10px;
+}
+
+.social-media-icon:hover{
+    color:black;
+}
