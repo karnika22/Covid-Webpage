@@ -2,6 +2,13 @@ body{
   background-color: #2a2438
 }
 
+h2{
+    color: #dbd8e3;
+}
+
+p{
+    color: #dbd8e3;
+}
 .card-header{
   background-color: #423c50;
   color: #dafa26;
