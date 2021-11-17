@@ -1,13 +1,18 @@
 body{
   background-color: #2a2438
 }
-
+h1{
+  color: #dbd8e3;
+  text-align: center;
+}
 h2{
     color: #dbd8e3;
+    text-align: center;
 }
 
 p{
     color: #dbd8e3;
+    text-align: center;
 }
 
 .text{
@@ -92,7 +97,7 @@ p{
   width: 100%;
   padding-top: 3px;
   padding-bottom: 3px;
-  background: #002064;
+  background: #254486;
   border-bottom: 3px solid black;
   font-size: 1.5em;
   color: white;
