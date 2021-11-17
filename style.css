@@ -9,6 +9,10 @@ h2{
 p{
     color: #dbd8e3;
 }
+
+.text{
+    color: black;
+}
 .card-header{
   background-color: #423c50;
   color: #dafa26;
