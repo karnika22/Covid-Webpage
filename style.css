@@ -57,6 +57,7 @@ h3{
   min-width: 50%;
   max-width: 60%;
   z-index: 1;
+  padding: 0;
 }
 
 .barcontainerheader {
@@ -84,7 +85,7 @@ h3{
   width: 17%;
   text-align: center;
   color: white;
-  text-shadow: 1px 1px 0 black;
+  /* text-shadow: 1px 1px 0 black; */
   box-shadow: 4px 0 8px #888;
   margin-left: 4px;
 }
@@ -97,7 +98,7 @@ h3{
   
   bottom: 0;
   width: 100%;
-  background-color: #dafa26;
+  background-color: #ffffff;
   /* text-shadow: 1px 1px 0px black; */
   color: rgba(0, 0, 0, 0.829);
 }
@@ -108,7 +109,7 @@ h3{
 
 .bar2 {
   margin-left:20%;
-  background-color: rgb(235, 23, 76);
+  background-color: rgb(173, 37, 71);
 }
 
 .bar5 {
