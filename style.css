@@ -1,20 +1,15 @@
 body{
-  background-color: #c2caddb6;
+  background-color: #2a2438;
+}
+h1{
+  color: #dbd8e3;
+  text-align: center;
 }
 h2{
-  text-align: center;
+  color: #dbd8e3;
 }
 h3{
   text-align: center;
-}
-.data-card{
-  transform: scale(0.97);
-}
-.card-header{
-  background-color: #39646352; 
-}
-.card-body{
-  background-color: #7aa1a567; 
 }
 /* Add a black background color to the top navigation */
 .topnav {
@@ -53,13 +48,13 @@ h3{
 .barcontainer {
   /* align-self: ; */
   position: relative;
-  border: 3px solid black;
+  border: 3px solid rgb(255, 255, 255);
   border-radius: 5px 5px 0 0;
-  margin-left: 20px;
-  width: 0%;
-  min-height: 25vw;
-  max-height: 50vw;
-  min-width: 40%;
+  margin-left: 50px;
+  /* width: 40%; */
+  min-height: 30vw;
+  max-height:40vw;
+  min-width: 50%;
   max-width: 60%;
   z-index: 1;
 }
@@ -70,16 +65,16 @@ h3{
   width: 100%;
   padding-top: 3px;
   padding-bottom: 3px;
-  background: #663399;
+  background: #532680;
   border-bottom: 3px solid black;
   font-size: 1.5em;
   color: white;
-  text-align: center;
+  text-align: center; 
   text-shadow: 2px 2px 0 black;
   z-index: 0;
 }
 
-.bar1,.bar2,.bar5,.bar6,.bar7,.bar8,.bar9,.bar10,.bar11,.bar12 {
+.bar1,.bar2,.bar5,.bar6,.bar7{
   position: absolute;
   display: inline-block;
   bottom: 0;
@@ -104,7 +99,7 @@ h3{
   width: 100%;
   background-color: #dafa26;
   /* text-shadow: 1px 1px 0px black; */
-  color: rgba(188, 177, 207, 0.829);
+  color: rgba(0, 0, 0, 0.829);
 }
 .bar1 {
   margin-left:1%;
@@ -115,14 +110,6 @@ h3{
   margin-left:20%;
   background-color: rgb(235, 23, 76);
 }
-
-/* .bar3 {
-  margin-left:18%;
-}
-
-.bar4 {
-  margin-left:27%;
-} */
 
 .bar5 {
   margin-left:40%;
