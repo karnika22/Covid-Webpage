@@ -79,7 +79,7 @@ p{
 .barcontainer {
   /* align-self: ; */
   position: relative;
-  border: 3px solid black;
+  border: 3px solid #dbd8e3;
   border-radius: 5px 5px 0 0;
   margin-left: 20px;
   width: 80%;
@@ -98,7 +98,7 @@ p{
   padding-top: 3px;
   padding-bottom: 3px;
   background: #254486;
-  border-bottom: 3px solid black;
+  border-bottom: 0.5px solid #dbd8e3;
   font-size: 1.5em;
   color: white;
   text-align: center;
@@ -110,14 +110,14 @@ p{
   position: absolute;
   display: inline-block;
   bottom: 0;
-  border: 1px solid black;
+  border: 1px solid #dbd8e3;
   border-radius: 6px 6px 0 0;
   background: #22992c;
   width: 8.5%;
   text-align: center;
   color: white;
-  text-shadow: 1px 1px 0 black;
-  box-shadow: 4px 0 8px #888;
+  /* text-shadow: 1px 1px 0 rgb(160, 214, 250); */
+  box-shadow: 4px 0 6px #888;
   margin-left: 4px;
 }
 
