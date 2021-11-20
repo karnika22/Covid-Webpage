@@ -19,20 +19,13 @@ body {
 }
 
 
-
-.data1{
-  margin-top: 150px;
-  margin-left: 40px;
-  text-decoration-line: underline;
+.pie-data{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
-.data2{
-  margin-left: 250px;
-  margin-top: 0;
-  margin-bottom: 300px;
-  text-decoration-line: underline;
-}
-
 
 #legenda {
   margin-top: 310px;
