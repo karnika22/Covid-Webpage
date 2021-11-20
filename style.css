@@ -125,3 +125,46 @@ h3{
   margin-left:80%;
   background-color: rgb(132, 0, 255);
 }
+
+ /* TABLES */
+p{
+    text-align:left;
+    padding:20px;
+    font-size: 40px;
+    font-weight:bolder;
+    padding:10px 10px;
+    margin:10px 10px;
+    margin-bottom: 5px;
+}
+
+tbody{
+  padding:5px 5px;
+}
+
+table,th{
+    border: 1px solid black;
+    width: 50%;
+    margin:5px 5px;
+    border-collapse: collapse;
+}
+ 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: larger;
+  }
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+/* 3rd graph */
+.state-head{
+  text-align:right;
+  margin:25px 5px;
+  padding: 20px 20px;
+  font-size: 40px;
+}
+ 
+
