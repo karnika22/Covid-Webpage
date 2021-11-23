@@ -9,19 +9,23 @@ body {
 h1{
   color: #dbd8e3;
 }
-
+.d2{
+  color: #dbd8e3;
+}
 #my-pie-chart-container {
   display: flex;
   align-items: right;
   margin-left: 0%;
+  margin-top: 10%;
 }
 
 #my-pie-chart {
-  background: conic-gradient( orange 23.27% 40.47%, red 40.47%);
+  background: conic-gradient( #725eaa8f 23.27% 40.47%, #8579b9 40.47%);
   border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    margin-bottom: 20px;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  
 }
 
 
@@ -56,11 +60,11 @@ h1{
 }
 
 #color-red {
-  background-color: red;
+  background-color: #8579b9;
 }
 
 #color-orange {
-  background-color: orange;
+  background-color: #aaa0c58f;
 }
 
 /* TABLES */
@@ -84,6 +88,8 @@ table,th{
     margin:5px 5px;
     border-collapse: collapse;
     color: #dbd8e3;
+    width: 100%;
+    margin-top: 20%;
 }
 
 .table-data{
