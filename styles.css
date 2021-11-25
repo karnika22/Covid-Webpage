@@ -1,49 +1,69 @@
-/**********head**********/
 body{
-    text-align:center;
+    text-align: center;
+    background-color: #2A2438;
+    /* background-color: #FFF; */
 }
 
-.title{
-    margin: 10px 5px 20px 5px;
+h1{
+    padding: 15px 15px;
+    margin: 15px 15px;
+    color: rgb(226, 250, 7);
+}
+
+h3,h4{
+    color: rgb(226, 250, 7);
+    font-size: 45px;
+    padding: 10px 10px;
+}
+
+.column {
+    float: left;
+    width: 33%;
+}
+
+.row:after {
+    /* content: ""; */
+    display: table;
+    clear: both;
+}
+/* HELPLINE INDIA DIV */
+.helpline-div{
+    padding: 3px 3px;
+}
+/* icons */
+.icon{
+    color:rgb(210, 245, 10);
+    padding:10px 10px;
+    margin: 10px 10px;
+    margin-top: 20px;
+    font-size:3rem;
+}
+
+.fa-phone-alt{
+    size: 9px;
+}
+/* STATE HELPLINE */
+.select-state{
+    color: rgb(226, 250, 7);
+    font-size:30px;
     padding: 5px 5px;
-    font-family: "Ubuntu";
-    font-weight: bold;
-    font-size: 2.5rem;
-    line-height:1.5rem;
-}
-/***/
-.btn{
-    margin:0px;
 }
 
-/**********icons***********/
-.icons{
-    line-height:normal;
-    padding:10px 10px;
-    /* align :center; */
-    font-size:2rem;
-    color:grey;
-    position: relative;
-}
-.icon-mask{
-    padding-left:10px;
-    margin-left:25px;
+/* number box */
+.num-box{
+    padding: 10px 10px;
 }
 
-/*********footer section*****************/
-.social-media{
-    font-size:2rem;
-    color:grey;
-    font-weight: bold;
+#numberbtn{
+    /* background-color: #5C5470; */
+    background-color: #DBD8E3;
 }
-.copyright{
-    color:black;
-}
-
-.social-media-icon{
-    padding:10px 10px;
+.search-bar{
+    padding: 10px 10px;
+   color: aquamarine;
 }
 
-.social-media-icon:hover{
-    color:black;
+.get-contact{
+    margin-bottom: 20px;
+    /* padding: 10px 10px; */
 }
