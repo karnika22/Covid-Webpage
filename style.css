@@ -4,6 +4,10 @@ body{
 h1{
   color: #dbd8e3;
   text-align: center;
+  margin-top: 80px;
+  margin-bottom: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 h2{
     color: #2a2438;
@@ -13,6 +17,7 @@ h2{
 p{
     color: #dbd8e3;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .text{
@@ -75,12 +80,7 @@ p{
   color: white;
 }
 /* Bar-Graph-Editing */
-.heading{
-  margin-top: 100px;
-  margin-bottom: 70px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
+
 
 .lowest-barcontainer {
   /* align-self: ; */
