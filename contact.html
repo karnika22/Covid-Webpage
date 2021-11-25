@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact and Helpline</title>
+
+   <!-- stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+   <!-- font awesome icons -->
+   <script src="https://kit.fontawesome.com/8ab36c3ed4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>CONTACT AND HELPLINE</h1>
+
+  <!-- div 1 -->
+    <div class="row "> 
+        <div class="helpline-div col-lg-6 col-md-3"> 
+            <!-- helpline india contacts -->
+            <h3>HELPLINE INDIA  </h3>
+            <h4 class="sub-head" id="#indiaweb"> <a href="https://www.mohfw.gov.in/">Ministry of Health and Family Welfare</a></h4>
+            <!--  ICONS -->
+            <a class="" href="91-11-23978046"> <i class="icon  1 fas fa-phone-alt" id=""></i></a>
+            <a class="" href=" ncov2019@gov.in"> <i class="icon  2 fas fa-envelope" id=""></i></a>
+           <a class="" href="https://www.facebook.com/MoHFWIndia"> <i class="icon  3 fab fa-facebook" id=""></i></a>
+            <a class="" href="https://twitter.com/MoHFW_INDIA"> <i class="icon 4 fab fa-twitter" id=""></i></a>
+    </div>
+       
+   <!-- div 2 -->
+   
+    <div class="state-search col-lg-6 col-md-3">
+        <h3>STATE HELPLINE</h3>
+        <h4 class="select-state">SELECT YOUR STATE</h4> 
+    <div class="search-bar" id="res"> </div>
+    <div class="num-box" id="numberbox">
+
+       <div class="get-contact">
+        <button class=""id="numberbtn" onClick="ContactFunction()">Get Contact</button>
+       </div> 
+        <input type="text" id="numbertext">
+      
+    </div>
+    </div>
+</div>
+
+	<script>
+
+        // for div1 helpline india contacts
+        async function getData(){ 
+		let res=await fetch("https://api.rootnet.in/covid19-in/contacts")
+		let result=await res.json();
+        // let parent=document.querySelector("icon");
+        let reg=result.data.contacts.primary;
+		console.log(reg.number, reg.email, reg.twitter, reg.facebook);
+            // for(let icon=0;icon<=3;icon++){
+            //     parent.innerHTML+=`<a> ${reg[i]}</a>`
+            // }
+        }
+        getData();
+       
+
+        
+        // FOR DIV2  STATEWISE CONTACT NUMBERS
+        //changes to be done: number display label + statename +not to be shown until contact no appears
+        let numbertext=document.getElementById("numbertext");
+        function ContactFunction(event){
+            let state=document.getElementById("myState").value;
+            numbertext.value=contacts[state];
+        }
+
+        let contacts={};
+	    async function fetchData(){ 
+		let response=await fetch("https://api.rootnet.in/covid19-in/contacts")
+		let result=await response.json();
+		console.log(result);
+		let reg=result.data.contacts.regional;
+        for (let i=0; i<reg.length; ++i){
+            console.log(reg[i].loc, reg[i].number)
+            contacts[reg[i].loc]=reg[i].number;
+		}
+        // ------------------------------------
+        let parent=document.getElementById("res");
+        let inputField=document.createElement("input");
+        inputField.setAttribute("list","myStateList");
+        inputField.setAttribute("id","myState");
+        parent.append(inputField);
+
+        let dtlist=document.createElement("datalist");
+        dtlist.setAttribute("id","myStateList");
+        parent.append(dtlist);
+        for(let i=0;i<reg.length;i++){
+            let option=document.createElement("option");
+            option.setAttribute("value",reg[i].loc);
+            dtlist.append(option);
+        }
+        for(let state of Object.keys(contacts)){
+            let option=document.createElement("option");
+            option.setAttribute("value",state);
+            dtlist.append(option);
+        }
+    }
+	fetchData();
+	</script>
+
+
+    <!---bootstrap scripts-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
