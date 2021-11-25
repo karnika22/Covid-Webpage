@@ -75,6 +75,12 @@ p{
   color: white;
 }
 /* Bar-Graph-Editing */
+.heading{
+  margin-top: 100px;
+  margin-bottom: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 .barcontainer {
   /* align-self: ; */
@@ -87,7 +93,7 @@ p{
   min-height: 25vw;
   max-height: 50vw;
   min-width: 40%;
-  max-width: 60%;
+  max-width: 30%;
   z-index: 1;
 }
 
@@ -113,7 +119,7 @@ p{
   border: 1px solid #dbd8e3;
   border-radius: 6px 6px 0 0;
   background: #22992c;
-  width: 8.5%;
+  width: 13%;
   text-align: center;
   color: white;
   /* text-shadow: 1px 1px 0 rgb(160, 214, 250); */
@@ -158,45 +164,25 @@ p{
 }
 
 .bar1 {
-  margin-left:1%;
+  margin-left:5%;
   background-color: rgb(31, 38, 133);
 }
 
 .bar2 {
-  margin-left:11%;
+  margin-left:23%;
   background-color: rgb(27, 29, 163);
 }
 
 .bar5 {
-  margin-left:21%;
+  margin-left:43%;
   background-color: rgb(40, 42, 184);
 }
 
 .bar6 {
-  margin-left:31%;
+  margin-left:63%;
   background-color: rgb(64, 84, 201);
 }
 .bar7 {
-  margin-left:41%;
+  margin-left:83%;
   background-color: rgb(71, 89, 192);
-}
-.bar8 {
-  margin-left:51%;
-  background-color: rgb(82, 106, 243);
-}
-.bar9 {
-  margin-left:61%;
-  background-color: rgb(123, 158, 255);
-}
-.bar10 {
-  margin-left:71%;
-  background-color: rgb(116, 147, 248);
-}
-.bar11{
-  margin-left: 81%;
-  background-color: rgb(121, 153, 241);
-}
-.bar12{
-  margin-left: 91%;
-  background-color: rgb(161, 185, 250);
 }
