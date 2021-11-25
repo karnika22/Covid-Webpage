@@ -1,4 +1,4 @@
-    body{
+       body{
       background-color: #2a2438;
     }
 
@@ -109,26 +109,34 @@
     }
     .bar1 {
       margin-left:1%;
-      background-color: rgb(255, 0, 0);
+      background-color: #e0c09e;
+     
     }
     
     .bar2 {
       margin-left:20%;
-      background-color: rgb(173, 37, 71);
+      background-color: #8a653f;
+     
     }
     
     .bar5 {
       margin-left:40%;
-      background-color: rgb(255, 0, 179);
+      background-color:  #E6AA68;
+     
+      
     }
     
     .bar6 {
       margin-left:60%;
-      background-color: rgb(195, 0, 255);
+      background-color: #a07e5d;
+     
+      
     }
     
     .bar7 {
       margin-left:80%;
-      background-color: rgb(132, 0, 255);
+      background-color: #c5a078;
+     
+      
     }
     
