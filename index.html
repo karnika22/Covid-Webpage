@@ -91,35 +91,32 @@
 
     <h1 class="heading">Bar Chart Depicting States with highest number of COVID Cases</h1>
 
-    <div class='barcontainer'>
-      <div class='barcontainerheader'>
-        Bar Graph
-      </div>
-      <div class='bar1' style='height:30%'>
-       <h4 class="lowest-state"></h4> bar
+    <div class='lowest-barcontainer'>
+      <div class='lowest-bar1' style='height:15%'>
+       <h4 class="lowest-state"></h4>
         <div class='lowest-barlabel'>
         
         </div>
       </div>
-      <div class='bar2' style='height: 20%'>
+      <div class='lowest-bar2' style='height: 80%'>
         <h4 class="lowest-state"></h4>
         <div class='lowest-barlabel'>
          
         </div>
       </div>
-      <div class='bar5' style='height:40%'>
+      <div class='lowest-bar5' style='height:25%'>
        <h4 class="lowest-state"></h4>
         <div class='lowest-barlabel'>
          
         </div>
       </div>
-      <div class='bar6' style='height:48%'>
+      <div class='lowest-bar6' style='height:40%'>
        <h4 class="lowest-state"></h4>
         <div class='lowest-barlabel'>
          
         </div>
       </div>
-      <div class='bar7' style='height:56%'>
+      <div class='lowest-bar7' style='height:50%'>
         <h4 class="lowest-state"></h4>
         <div class='lowest-barlabel'>
       
@@ -142,7 +139,7 @@
             if(reg[i].totalConfirmed>upperlimit){
               console.log(reg[i].loc,reg[i].totalConfirmed); //data fetched in console
               parent[variable].innerHTML=`${reg[i].totalConfirmed}`
-              head[variable].innerHTML=`${reg[i].loc}`
+              head[variable].innerHTML=`<abbr title="${reg[i].loc}">${reg[i].loc}</abbr>`
               variable++;
               // finalData[reg[i].loc]=reg[i].totalConfirmed;
          }

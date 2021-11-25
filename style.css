@@ -82,12 +82,13 @@ p{
   margin-right: 20px;
 }
 
-.barcontainer {
+.lowest-barcontainer {
   /* align-self: ; */
   position: relative;
   border: 3px solid #dbd8e3;
   border-radius: 5px 5px 0 0;
   margin-left: 20px;
+  margin-bottom: 200px;
   width: 80%;
   /* margin: 0; */
   min-height: 25vw;
@@ -97,22 +98,7 @@ p{
   z-index: 1;
 }
 
-.barcontainerheader {
-  display: inline;
-  position: absolute;
-  width: 100%;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  background: #254486;
-  border-bottom: 0.5px solid #dbd8e3;
-  font-size: 1.5em;
-  color: white;
-  text-align: center;
-  text-shadow: 2px 2px 0 black;
-  z-index: 0;
-}
-
-.bar1,.bar2,.bar5,.bar6,.bar7,.bar8,.bar9,.bar10,.bar11,.bar12 {
+.lowest-bar1,.lowest-bar2,.lowest-bar5,.lowest-bar6,.lowest-bar7{
   position: absolute;
   display: inline-block;
   bottom: 0;
@@ -128,61 +114,51 @@ p{
 }
 
 
-.barlabel {
+.lowest-barlabel {
   position: absolute;
   bottom: 0;
   width: 100%;
   background-color: #000000;
-  color: rgba(181, 205, 228, 0.829);
+  color:#dbd8e3;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow: hidden;
 }
-.bar1 .barlabel{
-  
-}
-.bar2 .barlabel{
-  
-}
-.bar5 .barlabel{
-  
-}
-.bar6 .barlabel{
-  
-}
-.bar7 .barlabel{
-  
-}
-.bar8 .barlabel{
-  
-}
-.bar9 .barlabel{
-  
-}
-.bar10 .barlabel{
-  
-}
-.bar12 .barlabel{
+.lowest-bar1 .barlabel{
 
 }
-
-.bar1 {
+.lowest-bar2 .barlabel{
+  
+}
+.lowest-bar5 .barlabel{
+  
+}
+.lowest-bar6 .barlabel{
+  
+}
+.lowest-bar7 .barlabel{
+  
+}
+.lowest-bar1 {
   margin-left:5%;
-  background-color: rgb(31, 38, 133);
+  background-color: #89c2b7;
 }
 
-.bar2 {
+.lowest-bar2 {
   margin-left:23%;
-  background-color: rgb(27, 29, 163);
+  background-color: #506e69;
 }
 
-.bar5 {
+.lowest-bar5 {
   margin-left:43%;
-  background-color: rgb(40, 42, 184);
+  background-color: #72a198;
 }
 
-.bar6 {
+.lowest-bar6 {
   margin-left:63%;
-  background-color: rgb(64, 84, 201);
+  background-color: #71968f;
 }
-.bar7 {
+.lowest-bar7 {
   margin-left:83%;
-  background-color: rgb(71, 89, 192);
+  background-color: #577972;
 }
