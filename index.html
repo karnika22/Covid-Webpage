@@ -96,38 +96,61 @@
         Bar Graph
       </div>
       <div class='bar1' style='height:30%'>
-        bar
-        <div class='barlabel'>
-          January
+       <h4 class="lowest-state"></h4> bar
+        <div class='lowest-barlabel'>
+        
         </div>
       </div>
       <div class='bar2' style='height: 20%'>
-        bar
-        <div class='barlabel'>
-          February
+        <h4 class="lowest-state"></h4>
+        <div class='lowest-barlabel'>
+         
         </div>
       </div>
       <div class='bar5' style='height:40%'>
-        bar
-        <div class='barlabel'>
-          March
+       <h4 class="lowest-state"></h4>
+        <div class='lowest-barlabel'>
+         
         </div>
       </div>
       <div class='bar6' style='height:48%'>
-        bar
-        <div class='barlabel'>
-          April
+       <h4 class="lowest-state"></h4>
+        <div class='lowest-barlabel'>
+         
         </div>
       </div>
       <div class='bar7' style='height:56%'>
-        bar
-        <div class='barlabel' style="text-align: center;">
-          May
+        <h4 class="lowest-state"></h4>
+        <div class='lowest-barlabel'>
+      
         </div>
       </div>
     </div>
 
 
+<script>
+     async function lowestStateData(){
+        let res=await fetch("https://api.rootnet.in/covid19-in/stats/latest");
+        let result=await res.json();
+        let parent=document.querySelectorAll(".lowest-state");
+        let head=document.querySelectorAll(".lowest-barlabel");
+        let variable=0;
+        let reg=result.data.regional;
+          for (let i=0; i<reg.length;i++){
+            // let upperlimit=7600;  //upperlimit set to sort data
+            let upperlimit=5000; 
+            if(reg[i].totalConfirmed>upperlimit){
+              console.log(reg[i].loc,reg[i].totalConfirmed); //data fetched in console
+              parent[variable].innerHTML=`${reg[i].totalConfirmed}`
+              head[variable].innerHTML=`${reg[i].loc}`
+              variable++;
+              // finalData[reg[i].loc]=reg[i].totalConfirmed;
+         }
+       }
+     }
+lowestStateData();
+</script>
+    
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
