@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body class="looks">
+    <h1>Bar Chart HTML</h1>
+
+    <div class="row">
+
+    <div class='barcontainer col-lg-6 col-md-12 '>
+      <div class='barcontainerheader'>
+        States with the highest number of covid cases
+      </div>
+
+      <div class='bar1 bar-graph' style='height:30%;'>
+       <h4 class="state-data">bar</h4>
+        <div class='barlabel'></div>
+      </div>
+
+      <div class='bar2 bar-graph' style='height:40%'>
+        <h4 class="state-data">bar</h4>
+        <div class='barlabel'></div>
+      </div>
+
+      <div class='bar5 bar-graph' style='height:55%'>
+            <h4 class="state-data">bar</h4>
+        <div class='barlabel'></div>
+      </div>
+
+      <div class='bar6 bar-graph' style='height:65%'>
+            <h4 class="state-data">bar</h4>
+        <div class='barlabel'></div>
+      </div>
+
+      <div class='bar7 bar-graph' style='height:37%'>
+       <h4 class="state-data">bar</h4>
+        <div class='barlabel'>  </div>
+      </div>
+      
+    </div>
+  </div>
+
+<script> 
+
+  async function graphData(){
+        let res=await fetch("https://api.rootnet.in/covid19-in/stats/latest");
+        let result=await res.json();
+        let parent=document.querySelectorAll(".state-data");
+        let head=document.querySelectorAll(".barlabel");
+        let domvar=0;
+        let reg=result.data.regional;
+               
+          for (let i=0; i<reg.length;i++){
+            let lowerlimit=2000000;  //lower limit set to sort data
+            if(reg[i].totalConfirmed>lowerlimit){
+              console.log(reg[i].loc,reg[i].totalConfirmed); //data fetched in console
+              parent[domvar].innerHTML=`${reg[i].totalConfirmed}`
+              head[domvar].innerHTML=`${reg[i].loc}`
+              domvar++;
+              // finalData[reg[i].loc]=reg[i].totalConfirmed;
+         }
+       }
+     }
+
+  graphData();
+  
+  
+  </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+ 
+  </body>
+</html>
