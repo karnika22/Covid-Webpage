@@ -1,169 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="looks">     
-
-    <!-- INDIA-DATA CASES -->
-    <section class="India-Case-Data" id="covidCards">
-      <h1 >India's Covid Cases-Data</h1>
-      <p id="sample">Date And Time</p>
-
-      <div class="row" id="res">
-        <div class="data-card col-lg-3 col-md-6">
-          <div class="card-1">
-            <div class="card-header">
-              <h3>TOTAL</h3>
-            </div>
-            <div class="card-body">
-              <h2 id="total"></h2>
-              <!-- <button
-                class="btn btn-lg btn-block btn-outline-dark"
-                type="button"
-              > -->
-                <!-- Total-Data -->
-                <a class="btn btn-lg btn-block btn-outline-dark" href="https://covid19.who.int/region/searo/country/in">Total-Data</a>
-              <!-- </button> -->
-            </div>
-          </div>
-        </div>
-
-        <div class="data-card col-lg-3 col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <h3>ACTIVE</h3>
-            </div>
-            <div class="card-body">
-              <h2 id="active"></h2>
-              <button
-                class="btn btn-lg btn-block btn-outline-dark"
-                type="button">
-                Active-Data
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="data-card col-lg-3 col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <h3>RECOVERED</h3>
-            </div>
-            <div class="card-body">
-              <h2 id="recovered"></h2>
-              <button
-                class="btn btn-lg btn-block btn-outline-dark"
-                type="button">
-                Recovered-Data
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="data-card col-lg-3 col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <h3>DECEASED</h3>
-            </div>
-            <div class="card-body">
-              <h2 id="death"></h2>
-              <button
-                class="btn btn-lg btn-block btn-outline-dark"
-                type="button"
-              >
-                Deceased-Data
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <h1>Bar Chart Depicting States with highest number of COVID Cases</h1>
-
-    <div class='lowest-barcontainer'>
-      <div class='lowest-bar1' style='height:15%'>
-       <h4 class="lowest-state"></h4>
-        <div class='lowest-barlabel'>
-        
-        </div>
-      </div>
-      <div class='lowest-bar2' style='height: 80%'>
-        <h4 class="lowest-state"></h4>
-        <div class='lowest-barlabel'>
-         
-        </div>
-      </div>
-      <div class='lowest-bar5' style='height:25%'>
-       <h4 class="lowest-state"></h4>
-        <div class='lowest-barlabel'>
-         
-        </div>
-      </div>
-      <div class='lowest-bar6' style='height:40%'>
-       <h4 class="lowest-state"></h4>
-        <div class='lowest-barlabel'>
-         
-        </div>
-      </div>
-      <div class='lowest-bar7' style='height:50%'>
-        <h4 class="lowest-state"></h4>
-        <div class='lowest-barlabel'>
-      
-        </div>
-      </div>
-    </div>
-
-
-<script>
-     async function lowestStateData(){
-        let res=await fetch("https://api.rootnet.in/covid19-in/stats/latest");
-        let result=await res.json();
-        let parent=document.querySelectorAll(".lowest-state");
-        let head=document.querySelectorAll(".lowest-barlabel");
-        let variable=0;
-        let reg=result.data.regional;
-          for (let i=0; i<reg.length;i++){
-            // let upperlimit=7600;  //upperlimit set to sort data
-            let upperlimit=5000; 
-            if(reg[i].totalConfirmed>upperlimit){
-              console.log(reg[i].loc,reg[i].totalConfirmed); //data fetched in console
-              parent[variable].innerHTML=`${reg[i].totalConfirmed}`
-              head[variable].innerHTML=`<abbr title="${reg[i].loc}">${reg[i].loc}</abbr>`
-              variable++;
-              // finalData[reg[i].loc]=reg[i].totalConfirmed;
-         }
-       }
-     }
-lowestStateData();
-</script>
     
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="index.js" charset="utf-8"></script>
-  </body>
-</html>
+  <!---css stylesheets--->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="navbar.css">
 
+  <!----ubuntu font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+   <!----download fontawesome icons-->
+  <script src="https://kit.fontawesome.com/8ab36c3ed4.js" crossorigin="anonymous"></script> 
+
+</head>
+<body>
+   <section class="top-section">
+      
+         <nav class="navbar">
+         <a class="title" href="">covid-19data</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+         
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"><!---DROP DOWN PREVIEW-->
+        <!----SPECIFY WHICH ID TO COLLAPSE;SHOULD BE SAME AS DATA TARGET-->
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="graph1.html">States with most cases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="graph.html">States with least cases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pie.html">Vaccination status</a>
+      </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact & Helpline</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notification.html">Notifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#instructions">Instructions to follow</a>
+        </li>
+          <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+          </li>
+      </ul>
+   </div> <!-----ending here so that everything is included---->
+          </nav>
+  
+   </section>
+
+
+<section id="#rules" class="covid-rules">
+ <!-------fontawesome icons under head-------->
+<!----MASK ICON----->
+<br>  <br> <br> <div class="row"> <div class="icons">
+   <i class="fas fa-head-side-mask"></i>
+     <h5 class="icon-mask">WEAR A MASK</h5>
+   </div>
+ 
+ <!----SANITIZER ICON----->
+ <div class="icons">
+ <i class="fas fa-spray-can"></i>
+     <h5 class="icon-mask">USE HAND SANITIZER</h5>
+   </div>
+ 
+ <!----DISTANCE ICON----->
+ <div class="icons">
+ <i class="fas fa-people-arrows"></i>
+     <h5 class="icon-mask">6 FEET DISTANCE</h5>
+   </div> 
+ <!----ICONS END------> 
+</div>
+</section>
+
+
+<section id="footer" class="social-media">
+  <div class="footer-copyright container-fluid">
+      <i class="social-media-icon fas fa-phone-alt"></i>
+      <i class="social-media-icon fab fa-instagram"></i>
+      <i class="social-media-icon fab fa-facebook"></i> 
+      <i class="social-media-icon fab fa-twitter"></i>
+      <i class="social-media-icon far fa-envelope"></i>
+      <p class="copyright">©Copyright 2021 Covid19data</p>
+</div>
+
+</section>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
