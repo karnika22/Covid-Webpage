@@ -55,8 +55,18 @@ h3,h4{
 }
 
 #numberbtn{
-    /* background-color: #5C5470; */
-    background-color: #DBD8E3;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #7968a0;
+    border-radius: 8px;
+    border:3px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+}
+#numberbtn:hover{
+    /* color: ; */
+    box-shadow: 5px 5px 6px 3px rgba(205, 205, 214, 0.726);
 }
 .search-bar{
     padding: 10px 10px;
@@ -66,4 +76,11 @@ h3,h4{
 .get-contact{
     margin-bottom: 20px;
     /* padding: 10px 10px; */
+}
+
+
+#numbertext, #myState{
+    background-color:#cbb4ff;
+    border-radius: 8px;
+    height: 40px;
 }

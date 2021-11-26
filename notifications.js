@@ -6,8 +6,7 @@ async function fetchNotifications(){
     let notices=result.data.notifications;
 
     for(let i=0;i<notices.length;i++){
-        parent.innerHTML+=` <ul ><li className="newnotice"> ${notices[i].title} <br> 
-        ${ notices[i].link} </li> </ul>`
+        parent.innerHTML+=` <ul ><li className="newnotice"> ${notices[i].title} <br> <a href="${notices[i].link}">Follow Resource</a></li> </ul>`
     }
 }
 fetchNotifications();
