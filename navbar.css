@@ -1,8 +1,24 @@
 /**********head**********/
 body{
     text-align:center;
+    background-color: #dbd8e3;
 }
 
+.navbar{
+    background-color:#2a2438 ;
+}
+.fa-bars{
+    color: #2a2438;
+}
+.navbar-toggler{
+    background-color: #816db1;
+}
+a{
+    color:#816db1;
+}
+a:hover{
+    color: #dafa26;
+}
 .title{
     margin: 10px 5px 20px 5px;
     padding: 5px 5px;
@@ -20,24 +36,34 @@ body{
 .icons{
     line-height:normal;
     padding:10px 10px;
-    /* align :center; */
     font-size:2rem;
     color:grey;
     position: relative;
+   
+}
+
+.icons:hover{
+    color: #473c61;
 }
 .icon-mask{
     padding-left:10px;
     margin-left:25px;
 }
 
+.covid-rules{
+  display:flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
 /*********footer section*****************/
 .social-media{
     font-size:2rem;
-    color:grey;
+    color:#816db1;
     font-weight: bold;
 }
 .copyright{
-    color:black;
+    color:;
 }
 
 .social-media-icon{
@@ -45,5 +71,13 @@ body{
 }
 
 .social-media-icon:hover{
-    color:black;
+    color:#dafa26;
+}
+
+#footer{
+    background-color:#2a2438 ;
+    margin-top: 18%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+
 }
