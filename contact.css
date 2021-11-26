@@ -1,0 +1,69 @@
+body{
+    text-align: center;
+    background-color: #2A2438;
+    /* background-color: #FFF; */
+}
+
+h1{
+    padding: 15px 15px;
+    margin: 15px 15px;
+    color: rgb(226, 250, 7);
+}
+
+h3,h4{
+    color: rgb(226, 250, 7);
+    font-size: 45px;
+    padding: 10px 10px;
+}
+
+.column {
+    float: left;
+    width: 33%;
+}
+
+.row:after {
+    /* content: ""; */
+    display: table;
+    clear: both;
+}
+/* HELPLINE INDIA DIV */
+.helpline-div{
+    padding: 3px 3px;
+}
+/* icons */
+.icon{
+    color:rgb(210, 245, 10);
+    padding:10px 10px;
+    margin: 10px 10px;
+    margin-top: 20px;
+    font-size:3rem;
+}
+
+.fa-phone-alt{
+    size: 9px;
+}
+/* STATE HELPLINE */
+.select-state{
+    color: rgb(226, 250, 7);
+    font-size:30px;
+    padding: 5px 5px;
+}
+
+/* number box */
+.num-box{
+    padding: 10px 10px;
+}
+
+#numberbtn{
+    /* background-color: #5C5470; */
+    background-color: #DBD8E3;
+}
+.search-bar{
+    padding: 10px 10px;
+   color: aquamarine;
+}
+
+.get-contact{
+    margin-bottom: 20px;
+    /* padding: 10px 10px; */
+}
