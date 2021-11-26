@@ -1,0 +1,122 @@
+body {
+  background-color: #2a2438;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1{
+  color: #dbd8e3;
+}
+.d2{
+  color: #dbd8e3;
+}
+#my-pie-chart-container {
+  display: flex;
+  align-items: right;
+  margin-left: 0%;
+  margin-top: 10%;
+}
+
+#my-pie-chart {
+  background: conic-gradient( #725eaa8f 23.27% 40.47%, #8579b9 40.47%);
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  
+}
+
+
+.pie-data{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#legenda {
+  margin-top: 310px;
+  margin-left: 40px;
+  background-color: #dbd8e3;
+  padding: 5px;
+  height:50px;
+}
+
+.entry {
+  display: flex;
+  align-items: center;
+}
+
+.entry-color {
+    height: 10px;
+    width: 10px;
+}
+
+.entry-text {
+  margin-left: 5px;
+}
+
+#color-red {
+  background-color: #8579b9;
+}
+
+#color-orange {
+  background-color: #aaa0c58f;
+}
+
+/* TABLES */
+p{
+    text-align:left;
+    padding:20px;
+    font-size: 40px;
+    font-weight:bolder;
+    padding:10px 10px;
+    margin:10px 10px;
+    margin-bottom: 5px;
+}
+
+tbody{
+  padding:5px 5px;
+}
+
+table,th{
+    border: 1px solid rgb(0, 0, 0);
+    width: 50%;
+    margin:5px 5px;
+    border-collapse: collapse;
+    color: #dbd8e3;
+    width: 100%;
+    margin-top: 20%;
+}
+
+.table-data{
+  color: #2a2438;
+}
+
+.table-data2{
+  background-color: #5c5470;
+}
+ 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: larger;
+    
+  }
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+/* 3rd graph */
+.state-head{
+  text-align:right;
+  margin:25px 5px;
+  padding: 20px 20px;
+  font-size: 40px;
+}
+ 
