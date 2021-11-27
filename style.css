@@ -87,7 +87,8 @@ p{
   position: relative;
   border: 3px solid #dbd8e3;
   border-radius: 5px 5px 0 0;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 200px;
   width: 80%;
   /* margin: 0; */
@@ -162,3 +163,23 @@ p{
   margin-left:83%;
   background-color: #577972;
 }
+
+.lowest-bar1:hover{
+  box-shadow: 4px 0 30px rgb(94, 147, 122);
+}
+
+.lowest-bar2:hover{
+  box-shadow: 4px 0 30px rgb(94, 147, 122);
+}
+
+.lowest-bar5:hover{
+  box-shadow: 4px 0 30px rgb(94, 147, 122);
+}
+
+.lowest-bar6:hover{
+  box-shadow: 4px 0 30px rgb(94, 147, 122);
+}
+
+.lowest-bar7:hover{
+  box-shadow: 4px 0 30px rgb(94, 147, 122);
+ }

@@ -6,6 +6,7 @@
       color: #dbd8e3;
       text-align: center;
       margin-top: 50px;
+      margin-bottom: 40px;
     }
 
     h2{
@@ -56,7 +57,8 @@
       position: relative;
       border: 3px solid rgb(255, 255, 255);
       border-radius: 5px 5px 0 0;
-      margin-left: 50px;
+      margin-left: auto;
+      margin-right: auto;
       /* width: 40%; */
       min-height: 30vw;
       max-height:40vw;
@@ -66,20 +68,6 @@
       padding: 0;
     }
     
-    .barcontainerheader {
-      display: inline;
-      position: absolute;
-      width: 100%;
-      padding-top: 3px;
-      padding-bottom: 3px;
-      background: #532680;
-      border-bottom: 3px solid black;
-      font-size: 1.5em;
-      color: white;
-      text-align: center; 
-      text-shadow: 2px 2px 0 black;
-      z-index: 0;
-    }
     
     .bar1,.bar2,.bar5,.bar6,.bar7{
       position: absolute;
@@ -92,7 +80,7 @@
       text-align: center;
       color: white;
       /* text-shadow: 1px 1px 0 black; */
-      box-shadow: 4px 0 8px #888;
+      box-shadow: 4px 0 8px #888; 
       margin-left: 4px;
     }
     
@@ -102,42 +90,61 @@
       /* border-right: 77px solid rgb(250, 133, 87); */
       bottom: 0;
       width: 100%;
-      background-color: #ffffff;
-      color: rgba(0, 0, 0, 0.829);
+      background-color: #dbd8e5;
+      color: #2a2438;
       text-align: center;
       /* text-shadow: 1px 1px 0px black; */
       
     }
     .bar1 {
       margin-left:1%;
-      background-color: #e0c09e;
+      background-color: #f3d4b3;
      
     }
     
     .bar2 {
       margin-left:20%;
-      background-color: #8a653f;
+      background-color:#b48f69 ;
      
     }
     
     .bar5 {
       margin-left:40%;
-      background-color:  #E6AA68;
+      background-color:  #a57b4f;
      
       
     }
     
     .bar6 {
       margin-left:60%;
-      background-color: #a07e5d;
+      background-color: #775839;
      
       
     }
     
     .bar7 {
       margin-left:80%;
-      background-color: #c5a078;
+      background-color: #d4ae84;
      
       
     }
     
+    .bar1:hover{
+      box-shadow: 4px 0 30px rgb(255, 216, 143);
+    }
+
+    .bar2:hover{
+      box-shadow: 4px 0 30px rgb(255, 216, 143);
+    }
+
+    .bar5:hover{
+      box-shadow: 4px 0 30px rgb(255, 216, 143);
+    }
+
+    .bar6:hover{
+      box-shadow: 4px 0 30px rgb(255, 216, 143);
+    }
+
+    .bar7:hover{
+      box-shadow: 4px 0 30px rgb(255, 216, 143);
+     }
